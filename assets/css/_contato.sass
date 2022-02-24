@@ -1,0 +1,260 @@
+body.page-template-page-contato
+
+    .block-1
+        position: relative
+        .banner-topo
+            img
+                width: 100%
+        .title
+            position: absolute
+            top: 0
+            right: 0
+            left: 0
+            bottom: 0
+            margin: auto
+            display: flex
+            align-items: center
+            padding-left: 67px
+            .title-page
+                h1
+                    font: $Lba
+                    font-size: 30px
+                    color: rgba(255, 255, 255, .65)
+                    text-transform: uppercase
+                    margin-bottom: 6px 
+                    display: none
+                p
+                    font: $Lba
+                    font-size: 12px
+                    margin-left: 6px
+                    color: #fff
+                    text-transform: uppercase
+        .breadcumbs
+            opacity: 0
+            display: none
+    .block-2
+        position: relative
+        width: 100%
+        .content-page
+            padding: 71px 0 0 
+            text-align: center
+            position: relative
+            width: 100%
+            .texto-contato
+                width: 38%
+                position: absolute
+                top: 2px
+                right: 57px
+                h2
+                    font: $Mb
+                    font-size: 36px
+                    color: #0e0b3b
+                    text-transform: uppercase
+                    letter-spacing: -.3px 
+                    line-height: 42px
+                    margin-bottom: 16px
+                    margin-block-start: 0.83em
+                    margin-block-end: 0.50em
+                    margin-inline-start: 0px
+                    margin-inline-end: 0px
+                    text-align: initial
+                p
+                    font: $Lm
+                    font-size: 20px
+                    line-height: 30px
+                    letter-spacing: -.2px
+                    margin-right: 10px
+                    text-align: initial
+            .form
+                padding: 40px
+                .wpcf7
+                    .invalid
+                        .wpcf7-not-valid-tip
+                            display: none
+                        .wpcf7-response-output
+                            color: white
+                            text-align: center
+                            margin-top: 20px
+                            margin-bottom: 0
+                            border-color: red 
+                            background: red
+                            width: max-content
+                            margin: 20px auto 0
+                            padding: 7px
+                        .row
+                            .wpcf7-not-valid 
+                                border: 2px solid red
+                            .email
+                                .wpcf7-not-valid
+                                    border: 2px solid red
+                            .achou
+                                border: 2px solid red
+                        p
+                            .message
+                                .wpcf7-not-valid
+                                    border: 2px solid red 
+                    .sent
+                        .wpcf7-response-output
+                            margin-top: 20px 
+                            margin-bottom: 0
+                            color: white
+                            border-color: #46b450
+                            background: #46b450
+                            padding: 0
+                            text-align: center 
+                            padding: 7px
+                            width: max-content
+                            margin: 20px auto 0
+                .row
+                    background: none
+                    padding-left: 30px
+                    padding-right: 0px
+                    padding-bottom: 0px
+                    grid-gap: 10px
+                    width: 55%
+                    height: 50%
+                    .nome
+                        .wpcf7-form-control
+                            width: 100%
+                            background: none
+                            border: 1px solid #0e0b3b
+                            color: black
+                            margin-bottom: 20px
+                            padding: 5px 10px
+                            padding-top: 10px
+                            padding-bottom: 10px
+                            height: 50px
+                            font: $Lm
+                    .email
+                        .wpcf7-form-control
+                            width: 100%
+                            background: none
+                            border: 1px solid #0e0b3b
+                            color: black
+                            margin-bottom: 20px
+                            padding: 5px 10px
+                            padding-top: 10px
+                            padding-bottom: 10px
+                            height: 50px
+                            font: $Lm
+                .last
+                    display: flex
+                    grid-gap: 10px
+                    padding-top: 0px
+                    .contato
+                        .wpcf7-form-control
+                            width: 100%
+                            background: none
+                            border: 1px solid #0e0b3b
+                            color: black
+                            margin-bottom: 20px
+                            padding: 5px 10px
+                            padding-top: 10px
+                            padding-bottom: 10px
+                            height: 50px
+                            font: $Lm
+                    .achou
+                        width: 100%
+                        background: none
+                        border: 1px solid #0e0b3b
+                        color: black
+                        margin-bottom: 20px
+                        padding: 5px 10px
+                        padding-top: 10px
+                        padding-bottom: 10px
+                        height: 50px
+                        font: $Lm
+                        .wpcf7-select
+                            width: 100%
+                            border: none
+                            font: $Lm
+                            color: grey
+                p
+                    display: flex
+                    padding-left: 30px
+                    .message
+                        .wpcf7-textarea
+                            height: 150px
+                            font: $Lm
+                            padding: 5px 10px
+                            width: 1050px
+                            border: 1px solid #0e0b3b
+                .form-btns
+                    .btn-submit
+                        display: flex
+                        justify-content: center
+                        .ajax-loader
+                            display: none
+                        .wpcf7-submit
+                            margin-top: 30px
+                            padding: 15px
+                            width: 200px
+                            font: $Lm
+                            font-size: 20px
+                            font-weight: 800
+                            background: #deb43e
+                            color: black
+                            cursor: pointer
+                            &:hover
+                                transform: scale(1.05)
+                                transition: all 0.5s
+                                box-shadow: -12px 17px 20px -18px rgba(0, 0, 0, 0.50)
+                                
+@media ( max-width: 768px)
+    body.page-template-page-contato
+        .block-1
+            .breadcumbs
+                display: none
+                opacity: 0
+        .block-2
+            .content-page
+                padding: 50px 0 0
+                position: none
+                .texto-contato
+                    width: 100%
+                    position: revert
+                    h2
+                        font-size: 24px
+                        padding-left: 15px
+                        padding-right: 15px
+                        margin-top: 0px
+                        text-align: center
+                    p
+                        padding-left: 15px
+                        padding-right: 15px
+                        margin-right: 0px
+                        font-size: 16px
+                        text-align: center
+                .form
+                    padding: 20px 15px 50px 15px
+                    .row
+                        width: 100%
+                        padding: 0px
+                        .achou
+                            padding-top: 15px
+                    .last
+                        display: grid
+                        grid-gap: 0
+                        margin-top: -20px
+                        .contato
+                            margin-top: 20px
+                        .achou
+                            margin-top: -20px
+                            .wpcf7-select
+                                background: none
+                    p
+                        padding: 0px
+                        .message
+                            .wpcf7-textarea
+                                height: auto
+                                width: 100%
+                    .form-btns
+                        .btn-submit
+                            .wpcf7-submit
+                                font-size: 18px
+                                width: 100%
+                                &:hover
+                                    transform: none
+                                    transition: none
+                                    box-shadow: none
+                        

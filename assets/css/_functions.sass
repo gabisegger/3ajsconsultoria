@@ -1,0 +1,53 @@
+.elastic
+  width: 100%
+  float: left
+  position: relative
+.center
+  max-width: 1200px
+  width: 100%
+  margin: 0 auto
+  box-sizing: border-box
+  position: relative
+*
+  margin: 0
+  padding: 0 
+  list-style: none
+  outline: 0
+  text-decoration: none
+  box-sizing: border-box
+body, input, button
+  -webkit-font-smoothing: antialiased
+  width: 100%
+  font: $Lm
+section
+  float: left
+  width: 100% 
+input
+  box-shadow: none
+  border: none
+button
+  cursor: pointer
+  background: none
+  border: none
+[type="submit"]
+  cursor: pointer
+img
+  display: block
+@keyframes phone-buzz
+  20%, 100% 
+    transform: rotate(0)
+  2.5%
+    transform: rotate(3deg)
+  5%
+    transform: rotate(-3deg)
+  7.5%
+    transform: rotate(3deg)
+  10%
+    transform: rotate(-3deg)
+
+
+
+@media only screen and (max-width: 768px)
+  .center
+    padding: 0 20px
+  
